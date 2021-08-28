@@ -1,0 +1,17 @@
+<h1>Juros Simples</h1>
+
+<label>Capital Inicial:</label>
+<input class="form-control" type="number" [(ngModel)]="c">
+
+<label>Taxa mensal:</label>
+<input class="form-control" type="number" [(ngModel)]="i">
+
+<label>Período de Tempo em meses</label>
+<input class="form-control" type="number" [(ngModel)]="t">
+<div><b>Resultados:</b></div>
+<table *ngFor="let item of getJurosSimp(); index as x">
+  <tr >
+    <td>Mês {{x+1}}: </td>
+    <td>Valor R$ {{item}} </td>
+  </tr>
+</table>
