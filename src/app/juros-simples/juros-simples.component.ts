@@ -18,7 +18,7 @@ export class JurosSimplesComponent implements OnInit {
 
   getJurosSimp(){
     let list: number[] = [];
-    for(let x =0; x<=this.t; x++){
+    for(let x = 1; x<=this.t; x++){
       list.push(this.c*(1+(this.i/100*x)))
     }
     return list;
